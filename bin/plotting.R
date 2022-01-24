@@ -66,12 +66,14 @@ plot_genes <- lapply(markers_map, function(x) subset(x, padj<0.05, fc>2)) %>%
   unique
 
 #plot_genes <-  as.character(unique(up_genes$GENEID))
-
 #plot_genes <- stringr::str_to_title(read_csv('data/genes-mirco.csv')[['Gene']])
+
+plot_genes <- c("Mrc1", "Cx3cr1", "Ptprc", "Itgam")
+retain_cl <- levels(all)
 
 for (i in plot_genes) {
   tryCatch({
-    pdf(paste0('plots/umap/', i, '.pdf'), width = 8.57, height = 5.79)
+    pdf(paste0('plots/umap/', i, '.pdf'), width = 8.57, height = 5.79, useDingbats = F)
     pl <- plot_expmap_seurat(features=c(i), point_size = 5, line_width = 0)
     print(pl)
     dev.off()

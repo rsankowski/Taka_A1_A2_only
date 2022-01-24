@@ -3,7 +3,7 @@ library(RaceID)
 source('~/Documents/Single cell analysis/Advanced-plots/20190214-go_term-analysis.R')
 
 date = Sys.Date()
-load('data/sc.Robj')
+load('data/all.RData')
 source("/home/roman/Documents/Single cell analysis/Advanced-plots/20181025-sankowski-et-al-functions.R")
 
 load("data/cluster-markers.RData") 
