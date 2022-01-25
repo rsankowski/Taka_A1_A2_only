@@ -3,7 +3,7 @@ Comparison A1 and A2 progenitor cells
 
 This R project contains the code to generate Figures for the publication titled 
 
-###Specification of CNS macrophage subsets occurs postnatally in defined anatomical niches
+### Specification of CNS macrophage subsets occurs postnatally in defined anatomical niches
 
 The project can be started in RStudio by executing the file Taka_A1_A2_only.Rproj. The folder structure is as follows:
 - **bin/** contains the R scripts to run the project. The number in front of the file name indicates the order in which the code should be executed, i.e. start with 0_setup.R to setup the folder structure and install required packages, then 1_load_counts.R, 2_seurat.R, and 4_plotting.R. functions.R contains custom functions for plotting and colors used for the plots.
