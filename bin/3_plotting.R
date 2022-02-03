@@ -391,7 +391,7 @@ for (i in plot_genes) {
           ggsave("plots/others/volcano_plot_late_dcs.pdf", width = 10, height = 10, useDingbats = F)
           
 #heatmap of the genes in the trajectory analysis
-          load("data/cluster-markers.RData") 
+          load("data/diffgenes-seurat.RData") 
           
           top20 <- all.markers %>% group_by(cluster) %>% top_n(n = 20, wt = avg_logFC) #filter(!cluster %in% c("5","8")) %>% 
           
